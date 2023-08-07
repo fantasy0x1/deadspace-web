@@ -9,7 +9,7 @@ async function fetchAvatar() {
     const response = await fetch(api + id, { method: 'GET', mode: 'cors' });
     if (response.ok) {
       const userData = await response.json();
-      var avatar = userData.url;
+      var avatar = userData.avatar_url;
       document.getElementById('avatar').src = avatar;
     } else {
       console.warn('Something went wrong. xd');
