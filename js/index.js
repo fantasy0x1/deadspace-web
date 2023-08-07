@@ -1,6 +1,7 @@
 'use strict';
 
-const api = 'https://discord-web-api.glitch.me/discord/user/';
+// Using local container (discord-api)
+const api = 'http://discord-api:5007/avatar/';
 const id = '484108069505073153';
 
 async function fetchAvatar() {
