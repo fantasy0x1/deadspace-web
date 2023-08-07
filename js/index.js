@@ -6,7 +6,7 @@ const id = '484108069505073153';
 
 async function fetchAvatar() {
   try {
-    const response = await fetch(api + id, { method: 'GET', mode: 'cors' });
+    const response = await fetch(api + id, { method: 'GET' });
     if (response.ok) {
       const userData = await response.json();
       var avatar = userData.avatar_url;
